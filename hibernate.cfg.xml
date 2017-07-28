@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/kitchen?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">123456</property>
+		
+		<mapping resource="com/jlkj/kitchen/bean/UserInf.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Admin.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Answer.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Comment.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Course.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/CourseComment.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/CourseVideo.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Menu.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Production.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/ProductionComment.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Question.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/Collection.hbm.xml"/>
+		<mapping resource="com/jlkj/kitchen/bean/MyCourse.hbm.xml"/>
+		
+	</session-factory>
+</hibernate-configuration>

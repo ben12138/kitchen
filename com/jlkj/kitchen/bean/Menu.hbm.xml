@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+  <class name="com.jlkj.kitchen.bean.Menu" table="menu">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native"></generator>
+        </id>
+        <property name="senderid" column="senderid" type="java.lang.Integer"></property>
+        <property name="title" column="title" type="java.lang.String"></property>
+        <property name="cover" column="cover" type="java.lang.String"></property>
+        <property name="story" column="story" type="java.lang.String"></property>
+        <property name="food" column="food" type="java.lang.String"></property>
+        <property name="category1" column="category1" type="java.lang.Integer"></property>
+        <property name="category2" column="category2" type="java.lang.Integer"></property>
+        <property name="category3" column="category3" type="java.lang.Integer"></property>
+        <property name="step1" column="step1" type="java.lang.String"></property>
+        <property name="step2" column="step2" type="java.lang.String"></property>
+        <property name="step3" column="step3" type="java.lang.String"></property>
+        <property name="pic1" column="pic1" type="java.lang.String"></property>
+        <property name="pic2" column="pic2" type="java.lang.String"></property>
+        <property name="pic3" column="pic3" type="java.lang.String"></property>
+        <property name="time" column="time" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

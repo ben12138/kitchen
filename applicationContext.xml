@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="loginDao" class="com.jlkj.kitchen.daoimp.UserInfDaoImp"></bean>
+	<bean id="questionDao" class="com.jlkj.kitchen.daoimp.QuestionDaoImp"></bean>
+	<bean id="answerDao" class="com.jlkj.kitchen.daoimp.AnswerDaoImp"></bean>
+	<bean id="menuDao" class="com.jlkj.kitchen.daoimp.MenuDaoImp"></bean>
+	<bean id="productionDao" class="com.jlkj.kitchen.daoimp.ProductionDaoImp"></bean>
+	<bean id="productionCommentDao" class="com.jlkj.kitchen.daoimp.ProductionCommentDaoImp"></bean>
+	<bean id="collectionDao" class="com.jlkj.kitchen.daoimp.IsCollectedDaoImp"></bean>
+	<bean id="courseDao" class="com.jlkj.kitchen.daoimp.CourseDaoImp"></bean>
+	<bean id="coursevideoDao" class="com.jlkj.kitchen.daoimp.CourseVideoDaoImp"></bean>
+	<bean id="coursecommentDao" class="com.jlkj.kitchen.daoimp.CourseCommentDaoImp"></bean>
+	<bean id="adminDao" class="com.jlkj.kitchen.daoimp.AdminDaoImp"></bean>
+	<bean id="mycourseDao" class="com.jlkj.kitchen.daoimp.MyCourseDaoImp"></bean>
+
+	<bean id="loginAction" class="com.jlkj.kitchen.action.LoginAction"
+		scope="prototype" p:dao-ref="loginDao"></bean>
+
+	<bean id="registerAction" class="com.jlkj.kitchen.action.RegisterAction"
+		scope="prototype" p:dao-ref="loginDao"></bean>
+		
+	<bean id="getUserInfAction" class="com.jlkj.kitchen.action.GetUserInfAction"
+		scope="prototype" p:dao-ref="loginDao"></bean>
+
+	<bean id="findpasswordAction" class="com.jlkj.kitchen.action.FindPasswordAction"
+		scope="prototype" p:dao-ref="loginDao"></bean>
+
+	<bean id="updateUserInfAction" class="com.jlkj.kitchen.action.UpdateUserInfAction"
+		scope="prototype" p:dao-ref="loginDao"></bean>
+		
+	<bean id="addQuestionAction" class="com.jlkj.kitchen.action.AddQuestionAction"
+		scope="prototype" p:dao-ref="questionDao"></bean>
+		
+	<bean id="getQuestionAction" class="com.jlkj.kitchen.action.GetQuestionAction"
+		scope="prototype" p:dao-ref="questionDao"></bean>
+		
+	<bean id="getAnswerAction" class="com.jlkj.kitchen.action.GetAnswerAction"
+		scope="prototype" p:dao-ref="answerDao"></bean>
+		
+	<bean id="addAnswerAction" class="com.jlkj.kitchen.action.AddAnswerAction"
+		scope="prototype" p:dao-ref="answerDao"></bean>
+		
+	<bean id="addPraiseAction" class="com.jlkj.kitchen.action.AddPraiseAction"
+		scope="prototype" p:dao-ref="answerDao"></bean>
+		
+	<bean id="searchQuestionAction" class="com.jlkj.kitchen.action.SearchQuestionAction"
+		scope="prototype" p:dao-ref="questionDao"></bean>
+		
+	<bean id="addMenuAction" class="com.jlkj.kitchen.action.AddMenuAction"
+		scope="prototype" p:dao-ref="menuDao"></bean>
+		
+	<bean id="addProductionAction" class="com.jlkj.kitchen.action.AddProductionAction"
+		scope="prototype" p:dao-ref="productionDao"></bean>
+		
+	<bean id="getProductionAction" class="com.jlkj.kitchen.action.GetProductionAction"
+		scope="prototype" p:dao-ref="productionDao"></bean>
+		
+	<bean id="getMyProductionAction" class="com.jlkj.kitchen.action.GetMyProductionAction"
+		scope="prototype" p:dao-ref="productionDao"></bean>
+		
+	<bean id="getMenuAction" class="com.jlkj.kitchen.action.GetMenuAction"
+		scope="prototype" p:dao-ref="menuDao"></bean>
+		
+	<bean id="getMyMenuAction" class="com.jlkj.kitchen.action.GetMyMenuAction"
+		scope="prototype" p:dao-ref="menuDao"></bean>
+		
+	<bean id="searchMenuAction" class="com.jlkj.kitchen.action.SearchMenuAction"
+		scope="prototype" p:dao-ref="menuDao"></bean>
+		
+	<bean id="updateProductionAction" class="com.jlkj.kitchen.action.UpdateProductionAction"
+		scope="prototype" p:dao-ref="productionDao"></bean>
+		
+	<bean id="updateProductionCommentAction" class="com.jlkj.kitchen.action.UpdateProductionCommentAction"
+		scope="prototype" p:dao-ref="productionCommentDao"></bean>
+		
+	<bean id="getProductionCommentAction" class="com.jlkj.kitchen.action.GetProductionCommentAction"
+		scope="prototype" p:dao-ref="productionCommentDao"></bean>
+		
+	<bean id="addProductionCommentAction" class="com.jlkj.kitchen.action.AddProductionCommentAction"
+		scope="prototype" p:dao-ref="productionCommentDao"></bean>
+		
+	<bean id="isCollectedAction" class="com.jlkj.kitchen.action.IsCollectedAction"
+		scope="prototype" p:dao-ref="collectionDao"></bean>
+		
+	<bean id="collectAction" class="com.jlkj.kitchen.action.CollectAction"
+		scope="prototype" p:dao-ref="collectionDao"></bean>
+		
+	<bean id="cancelCollectionAction" class="com.jlkj.kitchen.action.CancelCollectionAction"
+		scope="prototype" p:dao-ref="collectionDao"></bean>
+		
+	<bean id="getCollectionAction" class="com.jlkj.kitchen.action.GetCollectionAction"
+		scope="prototype" p:dao-ref="collectionDao"></bean>
+		
+	<bean id="getAllKitchenAction" class="com.jlkj.kitchen.action.GetAllKitchenAction"
+		scope="prototype" p:dao-ref="courseDao"></bean>
+		
+	<bean id="getRecommendCourseAction" class="com.jlkj.kitchen.action.GetRecommendCourseAction"
+		scope="prototype" p:dao-ref="courseDao"></bean>
+		
+	<bean id="getKitchenVideoAction" class="com.jlkj.kitchen.action.GetKitchenVideoAction"
+		scope="prototype" p:dao-ref="coursevideoDao"></bean>
+		
+	<bean id="getKitchenCommentAction" class="com.jlkj.kitchen.action.GetKitchenCommentAction"
+		scope="prototype" p:dao-ref="coursecommentDao"></bean>
+		
+	<bean id="getTeacherAction" class="com.jlkj.kitchen.action.GetTeacherAction"
+		scope="prototype" p:dao-ref="adminDao"></bean>
+		
+	<bean id="isHasCourseAction" class="com.jlkj.kitchen.action.IsHasCourseAction"
+		scope="prototype" p:dao-ref="mycourseDao"></bean>
+		
+	<bean id="cancelCourseAction" class="com.jlkj.kitchen.action.CancelCourseAction"
+		scope="prototype" p:dao-ref="mycourseDao"></bean>
+		
+	<bean id="addMyCourseAction" class="com.jlkj.kitchen.action.AddMyCourseAction"
+		scope="prototype" p:dao-ref="mycourseDao"></bean>
+		
+	<bean id="addCourseCommentPraiseAction" class="com.jlkj.kitchen.action.AddCourseCommentPraiseAction"
+		scope="prototype" p:dao-ref="coursecommentDao"></bean>
+		
+	<bean id="addCourseCommentAction" class="com.jlkj.kitchen.action.AddCourseCommentAction"
+		scope="prototype" p:dao-ref="coursecommentDao"></bean>
+		
+	<bean id="getMyCourseAction" class="com.jlkj.kitchen.action.GetMyCourseAction"
+		scope="prototype" p:dao-ref="mycourseDao"></bean>
+		
+	<bean id="getCategoryMenuAction" class="com.jlkj.kitchen.action.GetCategoryMenuAction"
+		scope="prototype" p:dao-ref="menuDao"></bean>
+
+</beans>

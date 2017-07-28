@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+  <class name="com.jlkj.kitchen.bean.Comment" table="comment">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native"></generator>
+        </id>
+        <property name="senderid" column="senderid" type="java.lang.Integer"></property>
+        <property name="comment" column="comment" type="java.lang.String"></property>
+        <property name="menuid" column="menuid" type="java.lang.Integer"></property>
+        <property name="praise" column="praise" type="java.lang.Integer"></property>
+        <property name="time" column="time" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

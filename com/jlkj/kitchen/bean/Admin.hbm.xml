@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+  <class name="com.jlkj.kitchen.bean.Admin" table="admin">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native"></generator>
+        </id>
+        <property name="username" column="username" type="java.lang.String"></property>
+        <property name="password" column="password" type="java.lang.String"></property>
+        <property name="nickname" column="nickname" type="java.lang.String"></property>
+        <property name="imgurl" column="imgurl" type="java.lang.String"></property>
+        <property name="email" column="email" type="java.lang.String"></property>
+        <property name="company" column="company" type="java.lang.String"></property>
+        <property name="birthday" column="birthday" type="java.lang.String"></property>
+        <property name="sex" column="sex" type="java.lang.Integer"></property>
+        <property name="introduction" column="introduction" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

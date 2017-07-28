@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+  <class name="com.jlkj.kitchen.bean.CourseVideo" table="coursevideo">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native"></generator>
+        </id>
+        <property name="courseid" column="courseid" type="java.lang.Integer"></property>
+        <property name="courseurl" column="courseurl" type="java.lang.String"></property>
+        <property name="coursename" column="coursename" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

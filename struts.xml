@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+ <!-- 表示处于开发模式 -->
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="kitchen" namespace="/" extends="struts-default">
+		<action name="LoginAction" class="loginAction" method="login">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="RegisterAction" class="registerAction" method="register">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="FindPasswordAction" class="findpasswordAction" method="findpassword">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="UpdateUserInfAction" class="updateUserInfAction" method="update">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetMenuAction" class="getMenuAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetMyMenuAction" class="getMyMenuAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="SearchMenuAction" class="searchMenuAction" method="search">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddMenuAction" class="addMenuAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddQuestionAction" class="addQuestionAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetQuestionAction" class="getQuestionAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetUserInfAction" class="getUserInfAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetAnswerAction" class="getAnswerAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddAnswerAction" class="addAnswerAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddPraiseAction" class="addPraiseAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="SearchQuestionAction" class="searchQuestionAction" method="search">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddMenuAction" class="addMenuAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddProductionAction" class="addProductionAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetProductionAction" class="getProductionAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetMyProductionAction" class="getMyProductionAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="UpdateProductionAction" class="updateProductionAction" method="update">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="UpdateProductionCommentAction" class="updateProductionCommentAction" method="update">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetProductionCommentAction" class="getProductionCommentAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddProductionCommentAction" class="addProductionCommentAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="IsCollectedAction" class="isCollectedAction" method="check">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="CollectAction" class="collectAction" method="collect">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="CancelCollectionAction" class="cancelCollectionAction" method="cancel">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetCollectionAction" class="getCollectionAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetAllKitchenAction" class="getAllKitchenAction" method="getAll">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetKitchenVideoAction" class="getKitchenVideoAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetKitchenCommentAction" class="getKitchenCommentAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetRecommendCourseAction" class="getRecommendCourseAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetTeacherAction" class="getTeacherAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="IsHasCourseAction" class="isHasCourseAction" method="check">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="CancelCourseAction" class="cancelCourseAction" method="cancel">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddMyCourseAction" class="addMyCourseAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddCourseCommentPraiseAction" class="addCourseCommentPraiseAction" method="update">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="AddCourseCommentAction" class="addCourseCommentAction" method="add">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetMyCourseAction" class="getMyCourseAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+		<action name="GetCategoryMenuAction" class="getCategoryMenuAction" method="get">
+			<result name="success" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+			<result name="error" type="stream">
+				<param name="contentType">text/html</param>
+				<param name="inputStream">result</param>
+			</result>
+		</action>
+	</package>
+</struts>
+<!-- END SNIPPET: xworkSample -->
